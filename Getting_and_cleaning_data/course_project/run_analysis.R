@@ -66,4 +66,4 @@ colnames(averages) = c("subject_number", "activity",
                        tail(paste(colnames(averages), "mean", sep = "-"), -2))
 
 #export
-write.table(averages, "./averaged_measurements.txt", sep="\t")
+write.table(averages, "./averaged_measurements.txt", sep="\t", row.name=FALSE)
